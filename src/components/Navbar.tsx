@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Image from 'next/image'
 import styled from 'styled-components';
+import perguntasFrequentes from '@/app/perguntasFrequentes/page';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
         <Link href="/" className='navbar-link'>
           Ajuda
         </Link>
-        <Link href="/" className='navbar-link'>
+        <Link href="/perguntasFrequentes" className='navbar-link'>
           Perguntas Frequentes
         </Link>
       </LinksContainer>
