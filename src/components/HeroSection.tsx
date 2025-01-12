@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -11,7 +12,9 @@ const HeroSection = () => {
           Nós te ajudamos a encontrar atendimento de saúde qualificado para pessoas LGBTQIAPN+, priorizando experiências com inclusividade e respeito.
         </Description>
         <ButtonGroup>
+        <Link href="/cadastro" passHref>
           <Button className="primary">Junte-se à comunidade!</Button>
+        </Link>
         </ButtonGroup>
       </HeroContent>
 

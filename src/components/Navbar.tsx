@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link href="/" className='navbar-link'>
           Quem Somos
         </Link>
-        <Link href="/" className='navbar-link'>
+        <Link href="/ajuda" className='navbar-link'>
           Ajuda
         </Link>
         <Link href="/perguntasFrequentes" className='navbar-link'>

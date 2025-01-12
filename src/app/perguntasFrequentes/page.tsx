@@ -9,28 +9,28 @@ const perguntasFrequentes: React.FC = () => {
       <Title>Perguntas Frequentes</Title>
       <FAQList>
         <FAQItem>
-          <Question>O que é a Lacrei Saúde?</Question>
-          <Answer>
+          <Pergunta>O que é a Lacrei Saúde?</Pergunta>
+          <Resposta>
             A Lacrei Saúde é uma plataforma dedicada a oferecer cuidado de qualidade para a comunidade LGBTQIAP+.
-          </Answer>
+          </Resposta>
         </FAQItem>
         <FAQItem>
-          <Question>Como posso me cadastrar?</Question>
-          <Answer>
+          <Pergunta>Como posso me cadastrar?</Pergunta>
+          <Resposta>
             Você pode se cadastrar clicando no botão "Entrar" no canto superior direito da página inicial.
-          </Answer>
+          </Resposta>
         </FAQItem>
         <FAQItem>
-          <Question>Quais serviços são oferecidos?</Question>
-          <Answer>
+          <Pergunta>Quais serviços são oferecidos?</Pergunta>
+          <Resposta>
             Oferecemos uma ampla gama de serviços de saúde e bem-estar personalizados para as necessidades da comunidade LGBTQIAP+.
-          </Answer>
+          </Resposta>
         </FAQItem>
         <FAQItem>
-          <Question>Posso entrar em contato para tirar dúvidas?</Question>
-          <Answer>
+          <Pergunta>Posso entrar em contato para tirar dúvidas?</Pergunta>
+          <Resposta>
             Claro! Você pode nos contatar pela seção "Ajuda" no menu principal.
-          </Answer>
+          </Resposta>
         </FAQItem>
       </FAQList>
     </FAQContainer>
@@ -66,7 +66,7 @@ const FAQList = styled.div`
 
 const FAQItem = styled.div``;
 
-const Question = styled.h2`
+const Pergunta = styled.h2`
   font-size: 1.25rem;
   font-weight: bold;
   color: #2d2d2d;
@@ -77,7 +77,7 @@ const Question = styled.h2`
   }
 `;
 
-const Answer = styled.p`
+const Resposta = styled.p`
   font-size: 1rem;
   color: #4a4a4a;
   line-height: 1.6;

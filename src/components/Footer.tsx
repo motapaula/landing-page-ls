@@ -16,7 +16,6 @@ const Footer = () => {
         <FooterTitle>Links Úteis</FooterTitle>
         <FooterLinks>
           <FooterLink>Sobre nós</FooterLink>
-          <FooterLink>Serviços</FooterLink>
           <FooterLink>Contato</FooterLink>
           <FooterLink>Blog</FooterLink>
         </FooterLinks>
@@ -24,7 +23,7 @@ const Footer = () => {
       <FooterColumn>
         <FooterTitle>Ajuda</FooterTitle>
         <FooterLinks>
-          <FooterLink>FAQ</FooterLink>
+          <FooterLink>Perguntas Frequentes</FooterLink>
           <FooterLink>Suporte</FooterLink>
           <FooterLink>Política de Privacidade</FooterLink>
           <FooterLink>Termos de Uso</FooterLink>
@@ -129,6 +128,7 @@ const SocialNetwork = styled.ul`
 const SocialNetworkIcon = styled.li`
   cursor: pointer;
   color: #018762;
+  padding: 8px;
   display: flex;
   align-items: center;
 
