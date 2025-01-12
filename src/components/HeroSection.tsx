@@ -37,8 +37,8 @@ const Section = styled.section`
     gap: 24px;
   }
 
-  /* Mobile Medium - 375px a 414px */
-  @media (min-width: 375px) and (max-width: 414px) {
+  /* Mobile Medium - 375px a 720px */
+  @media (min-width: 375px) and (max-width: 720px) {
     flex-direction: column-reverse;
     padding: 32px 24px;
     gap: 32px;
@@ -190,7 +190,7 @@ const Button = styled.button`
   }
 
   /* Mobile Medium */
-  @media (min-width: 375px) and (max-width: 414px) {
+  @media (min-width: 375px) and (max-width: 720px) {
     padding: 0.75rem 1.5rem;
     font-size: 0.875rem;
   }
