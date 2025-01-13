@@ -4,6 +4,10 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import styled from 'styled-components';
 
+interface LinksContainerProps {
+  isOpen: boolean;
+}
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -14,7 +18,7 @@ const Navbar = () => {
           <Image src="logo-horizontal.svg" alt="Logomarca da Lacrei Saúde" width={187} height={24} />
         </Link>
       </Logo>
-      <LinksContainer isopen={isMenuOpen}>
+      <LinksContainer isOpen={isMenuOpen}>
         <Link href="/" className='navbar-link'>
           Quem Somos
         </Link>
@@ -43,41 +47,32 @@ const NavBarContainer = styled.nav`
   background-color: #ffffff;
   color: #ffffff;
 
-  /* Modificações da nav bar de acordo com os breakpoints do design system. */
-
-  /* Mobile Small - até 360px */
   @media (max-width: 360px) {
     padding: 16px;
     flex-wrap: wrap;
   }
 
-  /* Mobile Medium - 375px a 414px */
   @media (min-width: 375px) and (max-width: 414px) {
     padding: 16px;
     flex-wrap: wrap;
   }
 
-  /* Mobile Large - 720px a 1366px */
   @media (min-width: 720px) and (max-width: 1366px) {
     padding: 20px 40px;
   }
 
-  /* Desktop Small - 1366px a 1440px */
   @media (min-width: 1366px) and (max-width: 1440px) {
     padding: 24px 80px;
   }
 
-  /* Desktop Medium - 1440px a 1920px */
   @media (min-width: 1440px) and (max-width: 1920px) {
     padding: 24px 120px;
   }
 
-  /* Desktop Large - 1920px */
   @media (min-width: 1920px) and (max-width: 2559px) {
     padding: 24px 162px;
   }
 
-  /* Desktop Ultra Wide - acima de 2560px */
   @media (min-width: 2560px) {
     padding: 24px 200px;
   }
@@ -99,7 +94,7 @@ const Logo = styled.div`
   }
 `;
 
-const LinksContainer = styled.div`
+const LinksContainer = styled.div<LinksContainerProps>`
   display: flex;
   gap: 2rem;
 
@@ -117,9 +112,8 @@ const LinksContainer = styled.div`
     }
   }
 
-  /* Configurações para mobile */
   @media (max-width: 720px) {
-    display: ${props => props.isopen ? 'flex' : 'none'};
+    display: ${props => props.isOpen ? 'flex' : 'none'};
     flex-direction: column;
     position: absolute;
     top: 80px;
