@@ -17,7 +17,7 @@ const perguntasFrequentes: React.FC = () => {
         <FAQItem>
           <Pergunta>Como posso me cadastrar?</Pergunta>
           <Resposta>
-            Você pode se cadastrar clicando no botão "Entrar" no canto superior direito da página inicial.
+            Você pode se cadastrar clicando no botão 'Entrar' no canto superior direito da página inicial.
           </Resposta>
         </FAQItem>
         <FAQItem>
@@ -29,7 +29,7 @@ const perguntasFrequentes: React.FC = () => {
         <FAQItem>
           <Pergunta>Posso entrar em contato para tirar dúvidas?</Pergunta>
           <Resposta>
-            Claro! Você pode nos contatar pela seção "Ajuda" no menu principal.
+            Claro! Você pode nos contatar pela seção 'Ajuda' no menu principal.
           </Resposta>
         </FAQItem>
       </FAQList>
