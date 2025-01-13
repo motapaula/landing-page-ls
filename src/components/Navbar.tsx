@@ -14,7 +14,7 @@ const Navbar = () => {
           <Image src="logo-horizontal.svg" alt="Logomarca da Lacrei Saúde" width={187} height={24} />
         </Link>
       </Logo>
-      <LinksContainer isOpen={isMenuOpen}>
+      <LinksContainer isopen={isMenuOpen}>
         <Link href="/" className='navbar-link'>
           Quem Somos
         </Link>
@@ -119,7 +119,7 @@ const LinksContainer = styled.div`
 
   /* Configurações para mobile */
   @media (max-width: 720px) {
-    display: ${props => props.isOpen ? 'flex' : 'none'};
+    display: ${props => props.isopen ? 'flex' : 'none'};
     flex-direction: column;
     position: absolute;
     top: 80px;
